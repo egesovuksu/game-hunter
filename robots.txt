@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://egesovuksu.github.io/game-hunter/sitemap.xml

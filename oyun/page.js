@@ -329,7 +329,7 @@ function setChart(g) {
       setChart(g);
     }
   }
-  if (PAGE.have_history) showHistory(PAGE);
+  if (PAGE.have_history) { PAGE._stores = PAGE.stores; showHistory(PAGE); }
   else {
     fetch(API + "/api/game?id=" + encodeURIComponent(PAGE.id))
       .then(r => r.ok ? r.json() : Promise.reject())
